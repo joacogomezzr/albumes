@@ -5,12 +5,12 @@ import java.util.ArrayList;
 public class AlbumFisico extends Album{
     private int stock;
     private int precio;
-    private ArrayList<Cancion> albumShakira = new ArrayList<>();
+    private ArrayList<Cancion> albumMichaeljackson = new ArrayList<>();
     private ArrayList<Cancion> albumZoe = new ArrayList<>();
     private ArrayList<Cancion> albumCaifanes = new ArrayList<>();
 
     public ArrayList<Cancion> getAlbumShakira() {
-        return albumShakira;
+        return albumMichaeljackson;
     }
 
     public ArrayList<Cancion> getAlbumZoe() {
@@ -38,9 +38,9 @@ public class AlbumFisico extends Album{
         this.stock = stock;
     }
 //    public void initData(){
-//        albumShakira.add(new Cancion("Hips Don't Lie", "Shakira"));
-//        albumShakira.add(new Cancion("Me Enamoré", "Shakira"));
-//        albumShakira.add(new Cancion("Waka Waka (This Time for Africa)", "Shakira"));
+//        albumMichaeljackson.add(new Cancion("Baby Be Mine", "Michaeljackson"));
+//        albumMichaeljackson.add(new Cancion("Beat It", "Michaeljackson"));
+//        albumMichaeljackson.add(new Cancion("Pretty Young Thing", "Michaeljackson"));
 //        albumZoe.add(new Cancion("Luna", "Zoé"));
 //        albumZoe.add(new Cancion("Labios Rotos", "Zoé"));
 //        albumZoe.add(new Cancion("Paula", "Zoé"));

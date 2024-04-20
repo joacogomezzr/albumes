@@ -58,14 +58,14 @@ public class HomeController {
                 alert.setHeaderText(null);
                 alert.setContentText(contenido.toString());
                 alert.showAndWait();
-            } else if (comboAlbum.getValue().equals("Las mujeres no lloran")) {
-                ArrayList<Cancion> cancions = App.getBiblioteca().getShakira().getAlbumShakira();
+            } else if (comboAlbum.getValue().equals("Thriller")) {
+                ArrayList<Cancion> cancions = App.getBiblioteca().getMichaeljackson().getAlbumMichaeljackson();
                 StringBuilder contenido = new StringBuilder("Canciones:\n");
-                for (int i = 0; i < App.getBiblioteca().getShakira().getAlbumShakira().size(); i++) {
-                    contenido.append(i+1).append(".- ").append(App.getBiblioteca().getShakira().getAlbumShakira().get(i)).append("\n");
+                for (int i = 0; i < App.getBiblioteca().getMichaeljackson().getAlbumMichaeljackson().size(); i++) {
+                    contenido.append(i+1).append(".- ").append(App.getBiblioteca().getMichaeljackson().getAlbumMichaeljackson().get(i)).append("\n");
                 }
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                alert.setTitle("Canciones del album Las Mujeres no Lloran");
+                alert.setTitle("Canciones del album Thriller");
                 alert.setHeaderText(null);
                 alert.setContentText(contenido.toString());
                 alert.showAndWait();
@@ -138,7 +138,7 @@ public class HomeController {
     }
 
     public void initialize(){
-        ObservableList<String> list = FXCollections.observableArrayList("Caifanes", "Las mujeres no lloran",  "MTV Unplugged");
+        ObservableList<String> list = FXCollections.observableArrayList("Caifanes", "Thriller",  "MTV Unplugged");
         comboAlbum.setItems(list);
         App.getBiblioteca().initData();
         App.getBiblioteca().init();

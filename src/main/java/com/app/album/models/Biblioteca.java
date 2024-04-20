@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class Biblioteca {
     private AlbumDigital caifanes = new AlbumDigital("Caifanes", "Caifanes", "AAC");
-    private AlbumDigital shakira = new AlbumDigital("Las mujeres no lloran", "Shakira", "AAC");
+    private AlbumDigital Michaeljackson = new AlbumDigital("Thriller", "Michael jackson", "AAC");
     private AlbumDigital zoe = new AlbumDigital("MTV Unplugged", "Zoé", "mp3");
     private ArrayList<AlbumFisico> albumFisicos = new ArrayList<>();
     private ArrayList<AlbumDigital> albumDigitals = new ArrayList<>();
@@ -17,7 +17,7 @@ public class Biblioteca {
 
     public void init(){
         caifanes.initData();
-        shakira.initData();
+        Michaeljackson.initData();
         zoe.initData();
     }
 
@@ -25,8 +25,8 @@ public class Biblioteca {
         return caifanes;
     }
 
-    public AlbumDigital getShakira() {
-        return shakira;
+    public AlbumDigital getMichaeljackson() {
+        return Michaeljackson;
     }
 
     public AlbumDigital getZoe() {
@@ -51,10 +51,10 @@ public class Biblioteca {
 
     public void initData(){
         albumFisicos.add(new AlbumFisico("Caifanes", "Caifanes", 3, 150));
-        albumFisicos.add(new AlbumFisico("las mujeres no lloran", "Shakira", 3, 160));
+        albumFisicos.add(new AlbumFisico("Thriller", "Michaeljackson", 3, 160));
         albumFisicos.add(new AlbumFisico("MTV Unplugged", "Zoé", 3, 180));
         albumDigitals.add(new AlbumDigital("Caifanes", "Caifanes", "AAC"));
-        albumDigitals.add(new AlbumDigital("Las mujeres no lloran", "Shakira", "AAC"));
+        albumDigitals.add(new AlbumDigital("Thriller", "Michaeljackson", "AAC"));
         albumDigitals.add(new AlbumDigital("MTV Unplugged", "Zoé", "mp3"));
     }
 }
